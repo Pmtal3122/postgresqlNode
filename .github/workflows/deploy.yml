@@ -1,0 +1,22 @@
+name: Auto Push
+
+on:
+  push:
+    branches:
+      - main  # Adjust if you're using a different default branch name
+
+jobs:
+  push_changes:
+    runs-on: windows
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Push changes
+      run: |
+        git config --global user.email "talegaonkar.piyush@gmail.com"
+        git config --global user.name "Piyush Talegaonkar"
+        git add .
+        git commit -m "Auto-commit changes"
+        git push

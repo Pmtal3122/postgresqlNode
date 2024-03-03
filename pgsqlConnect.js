@@ -49,5 +49,5 @@ function updateValue() {
     })
 }
 
-// insertValue();
+insertValue();
 // updateValue();

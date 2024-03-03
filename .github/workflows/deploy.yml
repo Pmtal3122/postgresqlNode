@@ -9,7 +9,7 @@ on:
 
 jobs:
   push_changes:
-    runs-on: windows
+    runs-on: self-hosted
 
     steps:
     - name: Checkout code

@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Adjust if you're using a different default branch name
+    paths:
+      - 'pgsqlConnect.js'
 
 jobs:
   push_changes:
